@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Javascript Panisah</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <script>
+      window.onload = function () {
+        alert("Halo! Selamat Datang di Formulir Pendaftaran SINTAK 2024~~~~"); };
+        function showDialog() {
+        alert("DISCLAIMER!!! Pastiin Data yang Anda isi benar ya!!");
+      }
+    </script>
+    <h1>
+        FORMULIR PENDAFTARAN SINTAK 2024
+    </h1>
+    <button onclick="showDialog()">Terms and Condition</button><br><br>
+
+    <form action="" method="post" onsubmit="validasi()">
+        <label for="">Nama :</label>
+        <input type="text" name="nama" id="nama" placeholder="Masukkan nama anda" size="30"><br><br>
+        <label for="">Email :</label>
+        <input type="email" name="email" id="email" placeholder="Masukkan email anda" size="30"><br><br>
+        <label for="">NIM :</label>
+        <input type="nim" name="nim" id="telp" placeholder="Masukkan nim anda" size="30"><br><br>
+        <input type="button"onclick="confirm('Apakah Kamu yakin mengisi data Anda dengan benar?')" value="confirm">
+        <input type="submit" value="Kirim">
+
+    </form>
+
+    <script>
+        
+
+        function validasi() {
+            var nama = document.getElementById("nama").value;
+            var email = document.getElementById("email").value;
+
+            if (nama == "") {
+                alert("Nama harus diisi!");
+                return false;
+            }
+            if (email == "") {
+                alert("Email harus diisi!");
+                return false
+            
+            }
+            if (nim == "") {
+                alert("Nomor Induk Mahasiswa harus diisi!");
+                return false
+            
+            }
+            return validasi;
+        }
+     
+    </script>
+</html>
